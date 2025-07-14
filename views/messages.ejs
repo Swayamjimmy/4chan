@@ -3,7 +3,8 @@
             <li>
                 <%= messages[i].user %>
                 <%= messages[i].text %>
-                <%= messages[i].date %>
+                <%= messages[i].added.toLocaleString() %>
+                 <a href="/message/<%= messages[i].id %>">Open</a>
             </li>
         <% } %>
 </ul>
